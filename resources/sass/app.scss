@@ -1,0 +1,232 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// body {
+//     background-color: black !important;
+// }
+
+.navbar {
+    background-color: $dark;
+}
+.nav-link {
+    color: white;
+    font-size: 2rem;
+}
+.nav-link:hover {
+    color: white;
+    font-size: 2rem;
+}
+.nav-link:active {
+    color: white;
+    font-size: 2rem;
+}
+.nav-link:visited {
+    color: white;
+    font-size: 2rem;
+}
+.banner {
+    min-height: 30vh;
+    font-size: 2rem;
+    background: linear-gradient(rgba(0, 0, 2, 0.5), rgba(0, 0, 2, 0.5));
+    position: relative;
+}
+.img-banner {
+    width: 100%;
+}
+.banner p {
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.img-logo {
+    width: 100%;
+}
+.sub-nav {
+    background-color: $dark;
+}
+.sub-nav-title {
+    color: white;
+}
+.sub-nav-title:hover {
+    color: white;
+    text-decoration: none;
+}
+.sub-nav-title:visited {
+    color: white;
+    text-decoration: none;
+}
+.sub-nav-title:active {
+    color: white;
+    text-decoration: none;
+}
+.form-wrapper {
+    display: inline-block;
+}
+
+.fixed {
+    height: 331px;
+    width: 730px;
+}
+
+.line {
+    background-color: yellow;
+    width: 100%;
+    height: 0.3rem;
+    display: block;
+}
+
+@media screen and (min-width: 480px) {
+    .sub-nav-wrapper {
+        text-align: center;
+    }
+}
+
+.jq-tab-wrapper {
+    background-color: #1e1c27;
+}
+
+.form-wrapper {
+    background-color: #a9a9a9;
+    margin-top: -2rem;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+.fas,
+.fab,
+.fa {
+    color: black !important;
+    font-size: 1.5rem;
+}
+li,
+ul {
+    list-style-type: none;
+}
+
+.single-widget {
+    background-color: #1e1c27;
+}
+
+.card-header {
+    color: white;
+    background-color: #1e1c27 !important;
+}
+
+.tag-bcg {
+    background-color: $red;
+    display: inline-block;
+    padding: 0.5rem;
+    font-family: "Calligraffitti", cursive;
+}
+
+.tag-bcg:hover {
+    background-color: black;
+    display: inline-block;
+    padding: 0.5rem;
+    font-family: "Calligraffitti", cursive;
+    color: $red !important;
+}
+.tag-text:hover {
+    color: $red !important;
+}
+
+///////////////// card css ////////////////////
+
+// .card1 {
+//     display: grid;
+//     grid-template-columns: 300px;
+//     width: 250px;
+//     grid-template-rows: 210px 210px 80px;
+//     grid-template-areas: "image" "text" "stats";
+//     border-radius: 18px;
+//     background: white;
+//     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+//     font-family: roboto;
+//     text-align: center;
+// }
+
+// .card1-image {
+//     grid-area: image;
+// }
+// .card1-text {
+//     grid-area: text;
+// }
+// .card1-stats {
+//     grid-area: stats;
+// }
+
+// .card1-image {
+//     grid-area: image;
+//     // background: url("img1.jpg");
+//     border-top-left-radius: 15px;
+//     border-top-right-radius: 15px;
+//     background-size: cover;
+// }
+
+// .card1-text {
+//     grid-area: text;
+//     // margin: 25px;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//     width: 250px;
+// }
+// .card1-text .date {
+//     color: rgb(255, 7, 110);
+//     font-size: 13px;
+// }
+// .card1-text p {
+//     color: grey;
+//     font-size: 15px;
+//     font-weight: 300;
+// }
+// .card1-text h2 {
+//     margin-top: 0px;
+//     font-size: 28px;
+// }
+
+// .card1-stats {
+//     grid-area: stats;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr;
+//     border-bottom-left-radius: 15px;
+//     border-bottom-right-radius: 15px;
+//     background: rgb(255, 7, 110);
+//     width: 250px;
+// }
+
+// .card1-stats .stat {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     color: white;
+//     padding: 10px;
+// }
+
+// .card1:hover {
+//     transform: scale(1.03);
+//     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+// }
+// .card1 {
+//     transition: 0.5s ease;
+//     cursor: pointer;
+//     margin: 30px;
+// }
+
+// .di-wrapper {
+//     background-color: black;
+// }

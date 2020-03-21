@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/all.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/admin.css" />
+
+    <title>Admin Section - Add Topics</title>
+  </head>
+  <body>
+    <p></p>
+    <header>
+      <div class="logo">
+        <h1 class="logo-text"><span>Awa</span> Inspires</h1>
+      </div>
+      <i class="fas fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li>
+          <a href="#">
+            <i class="fas fa-user"></i>
+            Awa Melvine
+            <i class="fas fa-chevron-down" style="font-size: .8rem;"></i>
+          </a>
+          <ul>
+            <li><a href="#" class="logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <div class="admin-wrapper">
+      <!-- left sidebar -->
+      <div class="left-sidebar">
+        <ul>
+          <li><a href="#">Manage Posts</a></li>
+          <li><a href="#">Manage Users</a></li>
+          <li><a href="#">Manage Topics</a></li>
+        </ul>
+      </div>
+      <!-- end of left sidebar -->
+
+      <!-- admin content -->
+      <div class="admin-content">
+        <div class="button-group">
+          <a href="#" class="btn btn-big">Add Topic</a>
+          <a href="#" class="btn btn-big">Manage Topics</a>
+        </div>
+
+        <div class="content">
+          <h2 class="page-title">Add Topic</h2>
+
+          <form action="create.html" method="post">
+            <div>
+              <label>Name</label>
+              <input type="text" name="name" class="text-input" />
+            </div>
+
+            <div>
+              <label>Description</label>
+              <textarea
+                name="description"
+                id="body"
+                class="text-input"
+                rows="7"
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="btn btn-big">Add Topic</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- end of admin content -->
+    </div>
+    <!-- Page Wrapper -->
+
+    <!-- JQuery -->
+    <script src="../../js/jquery.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/16.0.0/classic/ckeditor.js"></script>
+    <script src="../../js/ckeditor5/ckeditor5/ckeditor.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <!-- Custom Scripts -->
+  </body>
+</html>

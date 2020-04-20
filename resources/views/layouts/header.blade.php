@@ -1,6 +1,6 @@
 <div class="logo">
-        <h1 class="logo-text"><span>Awa</span> Inspires</h1>
-      </div>
+        <a href="{{route('home')}}"><h1 class="logo-text"><span>Free</span>Tuts</h1></a>
+</div>
       <i class="fas fa-bars menu-toggle"></i>
       <ul class="nav">
         <li>

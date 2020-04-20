@@ -16,7 +16,7 @@
     <title>Admin Section - Manage Posts</title>
   </head>
   <body>
-    <p></p>
+  
     <header>
       <div class="logo">
         <h1 class="logo-text"><span>Awa</span> Inspires</h1>

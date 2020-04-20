@@ -69,13 +69,13 @@
                 name="content"
                 id="body"
                 class="text-input"
-                rows="7"
+                rows="17"
               ></textarea>
             </div>
 
             <div class="form-group">
                     <label>Image</label>
-                    <input type="file" name="image" class="text-input">
+                    <input type="file" name="image" class="text-input" accept="image/*"> 
                 </div> 
 
             <div>
@@ -86,7 +86,7 @@
                     form-check-input 
                     form-check-label -->
                     <input type="checkbox" value="{{$tag->id}}" name="tag_id[]" class="form-check-input">
-                    <label class="mr-2 form-check-label ">{!! htmlspecialchars_decode($tag->name) !!}</label>
+                    <label class="mr-2 form-check-label ">{{ strip_tags($tag->name) }}</label>
                     @endforeach
             </div>
 

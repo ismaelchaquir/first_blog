@@ -83,9 +83,20 @@
 <html lang="en">
 <head>
     @include('layouts/head')
+
+    <style>
+.wrap{
+  width:1000px;
+  margin: auto;
+  margin-top: 100px;
+  
+}
+
+
+</style>
 </head>
 <body>
-    <header>
+    <header class="shadow z-300">
          @include('layouts/header')
     </header>
    

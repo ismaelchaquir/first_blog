@@ -23,13 +23,15 @@
 }
 
 .card{
+  border: 1px solid green;
+
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
   transition: 0.4s;
   width: 300px;
-  height:290px;
+  height:330px;
   background: #fff;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   font-family: sans-serif;
   float: left;
   margin-left:10px;
@@ -66,6 +68,10 @@
 .text-right{
   float:right;
 }
+.go-right{
+  float:right;
+  margin-top:3px;
+}
 </style>
 
 
@@ -95,56 +101,7 @@
         </li>
       </ul>
     </header>
-{{--
-    <div class="admin-wrapper">
-     
 
-        
-        <div class="content">
-        <div class="row">
-   
-            <div class="col-md-12">
-
-                <div class="col-md-6">
-                    <h3>Published:</h3>
-                    <hr>
-                    @foreach($publishedPosts as $post)
-                        <h3><a href="{{route('post.show', $post->id)}}">{!! str_limit($post->title, 30) !!}</a></h3>
-                        <p>{!! str_limit($post->content, 30) !!}</p>
-                        <form action="{{route('post.update',$post->id)}}" method="post">
-                            {{ method_field('patch')}}
-                            <input type="checkbox" value="0" name="status" checked style="display:none">
-                            <button type="submit" class="btn">Save as draft</button>
-                            {{ csrf_field() }}
-                        </form>
-                    @endforeach
-                </div>
-
-                <div class="col-md-6">
-                    <h3>Draft:</h3>
-                    <hr>
-                    @foreach($draftPosts as $post)
-                        <h3><a href="{{route('post.show', $post->id)}}">{!! str_limit($post->title, 30) !!}</a></h3>
-                        <p>{!! str_limit($post->content, 30) !!}</p>
-                        <form action="{{route('post.update',$post->id)}}" method="post">
-                            {{ method_field('patch')}}
-                            <input type="checkbox" value="1" name="status" checked style="display:none">
-                            <button type="submit" class="btn">Save as draft</button>
-                            {{ csrf_field() }}
-                        </form>
-                    @endforeach
-                </div>
-
-            </div> 
-
-        </div>
-        <!-- row -->
-        </div>
-        <!-- conatiner -->
-
-    </div>
-    <!-- Page Wrapper -->
---}}
 
 <div class="wrap">
  @foreach($draftPosts as $post)
@@ -156,10 +113,18 @@
     <img src="{{Storage::disk('local')->url($post->image)}}" alt="picture" class="card-img" style="width:100%">
     <div class="container">
     <b>{!! str_limit(htmlspecialchars_decode($post->title),50) !!}</b>
+
+    <form action="{{route('post.update',$post->id)}}" method="post">
+        {{method_field('patch')}}
+
+        <input type="checkbox" name="status" value="1" checked style="display:none;">
+        <button type="submit" class="btn btn-sm">Publish</button>
+        <span class="go-right"><i class="fas fa-eye"></i>{{$post->view_count}}</span>
+        {{csrf_field()}}
+    </form>
+
     <br>
-    <p>By:Freetuts
-    <span class="text-right"><i class="fas fa-chevron-down"></i></span>
-    </p>
+    <p>By:Freetuts</p>
     
     </div>
   </div>

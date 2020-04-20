@@ -1,6 +1,6 @@
 <div class="footer-content">
         <div class="footer-section about">
-          <h1 class="logo-text"><span>Awa</span>Inspires</h1>
+          <h1 class="logo-text"><span>Free</span>Tuts</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit cum
             praesentium minus excepturi molestias dolorem sapiente in rerum
@@ -27,16 +27,16 @@
             <a href="#">
               <li>Events</li>
             </a>
-            <a href="#">
-              <li>Team</li>
+            <a href="{{route('anti-spam-policy')}}">
+              <li>Anti Spam Policy</li>
             </a>
-            <a href="#">
-              <li>Mentors</li>
+            <a href="{{route('privacy-policy')}}">
+              <li>Privacy Policy</li>
             </a>
-            <a href="#">
-              <li>Gallery</li>
+            <a href="{{route('dmca')}}">
+              <li>DMCA</li>
             </a>
-            <a href="#">
+            <a href="{{route('terms')}}">
               <li>Terms and condiction</li>
             </a>
             <a href="#">

@@ -1,12 +1,13 @@
 @php if(View::exists('home')){ @endphp
 <div class="search section">
             <h2 class="section-title">Search</h2>
-            <form action="index.html" method="post">
+            <form action="{{route('post.index')}}" method="get">
               <input
                 type="text"
-                name="search-term"
+                name="s"
                 class="text-input"
                 placeholder="Search..."
+                value="{{ isset($s) ? $s : ''}}"
               />
             </form>
 </div>
@@ -22,5 +23,5 @@
             </ul>
           </div>
  @php } else { @endphp
-<p></p>
+
   @php } @endphp 

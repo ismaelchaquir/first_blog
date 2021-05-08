@@ -41,7 +41,7 @@ class TagController extends Controller
         $tag->name = $request->name;
         $tag->slug = str_slug($request->name);
         $tag->save();
-        return redirect('/home');
+        return redirect('/admin/tag');
     }
 
     /**

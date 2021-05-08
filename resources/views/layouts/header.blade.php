@@ -1,6 +1,7 @@
 <div class="logo">
         <a href="{{route('home')}}"><h1 class="logo-text"><span>Free</span>Tuts</h1></a>
 </div>
+
       <i class="fas fa-bars menu-toggle"></i>
       <ul class="nav">
         <li>
@@ -12,7 +13,7 @@
           </ul> -->
         </li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#" id="button">Services</a></li>
         <!-- <li><a href="#"></a>Sign up</li>
         <li><a href="#"></a>Login</li> -->
 

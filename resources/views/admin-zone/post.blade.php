@@ -132,12 +132,11 @@
 </div>
 
 
-    <!-- JQuery -->
 <script src="{{asset('js/jquery.js')}}"></script>
     <script src="{{asset('js/slick.min.js')}}"></script>
+     <script src="{{asset('js/ckeditor5/ckeditor5/ckeditor.js')}}"></script>
      <script src="{{asset('js/tinymce/jquery.tinymce.min.js')}}"></script>
      <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script>
     <script src="{{asset('js/scripts.js')}}"></script>
-    <!-- Custom Scripts -->
   </body>
 </html>

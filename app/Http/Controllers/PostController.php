@@ -63,7 +63,7 @@ class PostController extends Controller
         if ($request->tag_id) {
             $post->tags()->sync($request->tag_id);
         }
-        return redirect('/home');
+        return redirect('/admin/post');
     }
 
     /**
